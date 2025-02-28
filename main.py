@@ -15,11 +15,11 @@ soup = BeautifulSoup(request.text, 'html.parser')
 grupo_produtos = soup.find_all('li', attrs={'class': 'ui-search-layout__item shops__layout-item'})
 print('Pesquisando produtos...')
 
-for produto in grupo_produtos:  
+for produto in grupo_produtos:
     try:
-        nomes.append(produto.find('h2', attrs={'class': 'ui-search-item__title shops__item-title'}).text) 
-        valores.append(produto.find('span', attrs={'class': 'price-tag-amount'}).text)
-        links.append(produto.find('a', attrs={'class': 'ui-search-item__group__element shops__items-group-details ui-search-link'})['href'])
+        nomes.append(produto.find('h3', attrs={'class': 'poly-component__title-wrapper'}).text)
+        valores.append(produto.find('span', attrs={'class': 'andes-money-amount andes-money-amount--cents-superscript'}).text)
+        links.append(produto.find('a', attrs={'class': 'poly-component__title'})['href'])
     except:pass
 
 #dataframe
