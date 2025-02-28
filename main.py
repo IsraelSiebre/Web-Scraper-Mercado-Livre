@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from pathlib import Path
 
 #listas
 nomes = []
@@ -31,5 +30,5 @@ df['PREÇO'] = valores
 df['LINK'] = links
 
 
-df.to_excel(f'{Path.home()}\Desktop\\Relatório Produtos -- {input_produto}.xlsx', index=False)
-print("Relatorio Salvo Na Area de Trabalho")
+df.to_excel(f'{input_produto}.xlsx', index=False)
+print("Relatorio Salvo!")
