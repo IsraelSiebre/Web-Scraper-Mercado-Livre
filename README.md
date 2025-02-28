@@ -4,11 +4,9 @@ Um scraper robusto para extração de dados de produtos do Mercado Livre com tra
 
 ## Funcionalidades Principais ✨
 - Extração de dados completos de produtos (nome, preço, link)
-- Paginação automática (até 5 páginas por padrão)
-- Tratamento avançado de erros e reconexão
+- Tratamento de erros
 - Limpeza e formatação de dados
 - Exportação para Excel
-- Delay aleatório entre requisições para evitar bloqueio
 
 ## Pré-requisitos 📋
 - Python 3.8+
